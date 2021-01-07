@@ -1,0 +1,70 @@
+Last login: Wed Jan  6 22:12:24 on ttys000
+(base) arleneorafidiya@Arlenes-MacBook-Pro ~ % cd Documents  
+(base) arleneorafidiya@Arlenes-MacBook-Pro Documents % ls
+AWS					Python for Finance - Notebook Files
+Adobe					Python for Finance - Notebook Files.zip
+BI Course				Simple_iris_ML_App
+Financial_Analyst_Course		Untitled.ipynb
+GitHub					XD_renders
+Guitar 					guitar stuff 
+Image-Line				portfolio-site
+ML-React-App-Template			react-website
+Machine_Learning_Course			react-website-master.zip
+My Tableau Repository
+(base) arleneorafidiya@Arlenes-MacBook-Pro Documents % cd Simple_iris_ML_App
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % ls
+iris.data	iris.py
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % pip install pipreqs
+Requirement already satisfied: pipreqs in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (0.4.10)
+Requirement already satisfied: yarg in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from pipreqs) (0.1.9)
+Requirement already satisfied: docopt in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from pipreqs) (0.6.2)
+Requirement already satisfied: requests in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from yarg->pipreqs) (2.24.0)
+Requirement already satisfied: certifi>=2017.4.17 in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from requests->yarg->pipreqs) (2020.6.20)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from requests->yarg->pipreqs) (1.25.9)
+Requirement already satisfied: idna<3,>=2.5 in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from requests->yarg->pipreqs) (2.10)
+Requirement already satisfied: chardet<4,>=3.0.2 in /Users/arleneorafidiya/opt/anaconda3/lib/python3.8/site-packages (from requests->yarg->pipreqs) (3.0.4)
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % ls
+iris.data	iris.py
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % cd
+(base) arleneorafidiya@Arlenes-MacBook-Pro ~ % pipreqs /Users/arleneorafidiya/Documents
+INFO: Successfully saved requirements file in /Users/arleneorafidiya/Documents/requirements.txt
+(base) arleneorafidiya@Arlenes-MacBook-Pro ~ % ls 
+Applications		Library			ml-app
+Creative Cloud Files	Movies			node_modules
+Desktop			Music			opt
+Documents		Pictures		package-lock.json
+Downloads		Public
+(base) arleneorafidiya@Arlenes-MacBook-Pro ~ % cd Documents
+(base) arleneorafidiya@Arlenes-MacBook-Pro Documents % cd Simple_iris_ML_App
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % ls
+iris.data		iris.py			requirements.txt
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % touch setup.sh
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % ls
+iris.data		requirements.txt
+iris.py			setup.sh
+(base) arleneorafidiya@Arlenes-MacBook-Pro Simple_iris_ML_App % nano Procfile
+
+  GNU nano 2.0.6              File: Procfile                          Modified  
+
+web: sh setup.sh && streamlit run iris.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Page ^K Cut Text  ^C Cur Pos
+^X Exit      ^J Justify   ^W Where Is  ^V Next Page ^U UnCut Text^T To Spell
