@@ -7,12 +7,15 @@ from sklearn.ensemble import RandomForestClassifier
 # Title of Page
 st.write("""
 # Simple Iris Flower Prediction App
-This app predicts the **Iris flower** type!
+This app predicts the **Iris flower** type based in the Iris dataset
 """)
+st.write("Find the dataset [here](https://archive.ics.uci.edu/ml/datasets/iris)")
+
 
 
 # Header of sidebar
-st.sidebar.header('User Input Parameters')
+st.sidebar.header('(Adjust Values Here)')
+# st.sidebar.text('Enter Values Here')
 
 
 # function defining the user input features used to make predictions
@@ -34,9 +37,9 @@ df = user_input_features()
 
 
 # show what the user has inputted
-st.subheader('User Input parameters')
+st.subheader('Your chosen values')
 st.write(df)
-st.subheader ("These are the values which you have chosen in the sidebar")
+# st.subheader ("These are the values which you have chosen in the sidebar")
 
 # load dataset
 iris = datasets.load_iris()
@@ -54,7 +57,7 @@ prediction_proba = clf.predict_proba(df)
 
 
 # Index of the class labels 
-st.subheader('Class labels and their corresponding index number')
+st.subheader('Class labels with corresponding index number')
 st.write(iris.target_names)
 
 # class label predicted
@@ -63,5 +66,5 @@ st.write(iris.target_names[prediction])
 #st.write(prediction)
 
 # probability of each value
-st.subheader('Prediction Probability')
+st.subheader('Prediction Probability of each type')
 st.write(prediction_proba)
